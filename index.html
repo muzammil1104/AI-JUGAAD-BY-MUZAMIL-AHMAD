@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI JUGAAD BY (MUZAMIL AHMAD) | Smart Problem Solver</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, "Noto Nastaliq Urdu", sans-serif;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at top right, #1e40af55, transparent 35%),
+                radial-gradient(circle at bottom left, #7c3aed44, transparent 35%),
+                #070b18;
+            color: white;
+        }
+
+        .navbar {
+            width: 100%;
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            direction: ltr;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #60a5fa;
+        }
+
+        .badge {
+            background: #ffffff12;
+            border: 1px solid #ffffff20;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+
+        .hero {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 0 25px;
+            text-align: center;
+        }
+
+        .ai-icon {
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            box-shadow: 0 15px 50px #2563eb55;
+        }
+
+        h1 {
+            margin-top: 25px;
+            font-size: clamp(38px, 7vw, 70px);
+            line-height: 1.1;
+        }
+
+        h1 span {
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            margin: 20px auto 40px;
+            max-width: 650px;
+            color: #aab4c8;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .card {
+            max-width: 800px;
+            margin: auto;
+            padding: 25px;
+            background: #ffffff08;
+            border: 1px solid #ffffff15;
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 25px 70px #00000055;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 180px;
+            resize: vertical;
+            border: 1px solid #ffffff18;
+            border-radius: 18px;
+            padding: 20px;
+            background: #020617;
+            color: white;
+            font-size: 16px;
+            outline: none;
+           direction: ltr;
+text-align: left;
+        }
+
+        textarea:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px #6366f122;
+        }
+
+        textarea::placeholder {
+            color: #64748b;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 17px;
+            border: none;
+            border-radius: 15px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px #4f46e555;
+        }
+
+        .examples {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .example {
+            padding: 9px 14px;
+            border-radius: 20px;
+            background: #ffffff08;
+            border: 1px solid #ffffff12;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 60px 0 25px;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                margin-top: 35px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🤖 AI <span>JUGAAD BY (MUZAMIL AHMAD)</span>
+        <div class="badge">
+            🇵🇰 Made for Pakistan
+        </div>
+    </nav>
+
+    <main class="hero">
+
+        <div class="ai-icon">
+            🧠
+        </div>
+
+        <h1>
+            Har Problem Ka<br>
+            <span>Smart Solution</span>
+        </h1>
+
+        <p class="subtitle">
+            Apni real-life problem likhein aur AI Jugaad
+            aapko Pakistan ke hisaab se practical,
+            simple aur affordable solutions dega.
+        </p>
+
+        <div class="card">
+
+            <form action="/solve" method="POST">
+
+                <textarea
+                    name="problem"
+                    placeholder="السلام علیکم! Apni problem yahan likhein...
+
+Example:
+Mere mobile ki battery jaldi khatam ho jati hai. Kya karun?
+
+Ya:
+Mere paas 20,000 rupees hain. Main Pakistan mein chhota business start karna chahta hoon."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    ✨ AI Se Solution Lein
+                </button>
+
+            </form>
+
+            <div class="examples">
+
+                <div class="example">💼 Business Idea</div>
+                <div class="example">📱 Mobile Problem</div>
+                <div class="example">🎓 Study Problem</div>
+                <div class="example">💰 Budget Problem</div>
+                <div class="example">🏠 Daily Life</div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="footer">
+        AI Jugaad © 2026 — Smart Problem Solver 🇵🇰
+    </div>
+
+</body>
+
+</html>
